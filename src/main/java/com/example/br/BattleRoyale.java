@@ -1,5 +1,7 @@
 package com.example.br;
 
+import com.example.br.command.BRCommand;
+import com.example.br.command.BRUserCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BattleRoyale extends JavaPlugin {
@@ -10,7 +12,12 @@ public final class BattleRoyale extends JavaPlugin {
     public void onEnable() {
         instance = this;
         saveDefaultConfig();
-        getLogger().info("BRLobby enabled! (Step 1)");
+
+        // ثبت کامندها
+        getCommand("br").setExecutor(new BRCommand(this));
+        getCommand("bruser").setExecutor(new BRUserCommand(this));
+
+        getLogger().info("BRLobby enabled! (Step 1 - with commands)");
     }
 
     @Override
