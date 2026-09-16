@@ -1,0 +1,14 @@
+name: BRLobby
+version: 1.0.0
+main: com.example.br.BattleRoyale
+api-version: '1.21'
+author: You
+description: Battle Royale Lobby
+
+commands:
+  br:
+    description: BR admin commands
+    aliases: [bradmin]
+  bruser:
+    description: BR player commands
+    aliases: [bru, lobby]
