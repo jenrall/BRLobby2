@@ -1,0 +1,31 @@
+# ============================================
+#   BRLobby - Config
+# ============================================
+
+lobby:
+  max-players: 10
+  min-players: 2
+  countdown-seconds: 10
+  auto-start-when-full: true
+  welcome-message: "§a🎮 به Battle Royale خوش آمدید!"
+  waiting-message: "§e⏳ منتظر بازیکنای بیشتر... §b(%current%/%max%)"
+  countdown-message: "§6⚔ شروع بازی در §c%seconds% §6ثانیه..."
+  started-message: "§a✅ بازی شروع شد!"
+  broadcast-interval: 30
+
+chat:
+  enabled: true
+  prefix: "§7[§bLobby§7]"
+  format: "§f%player%§7: §f%message%"
+
+scoreboard:
+  enabled: true
+  title: "§6§l🎮 BATTLE ROYALE"
+  update-interval: 20
+
+tab:
+  enabled: true
+  header: "§6§l🎮 Battle Royale"
+  footer: "§7بازیکنا: §b%current%§7/§b%max%"
+
+arenas: {}
